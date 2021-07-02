@@ -45,6 +45,19 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## Sign in with username and password
+
+```bash
+$ curl -X POST http://localhost:3000/auth/login -d '{ "username": "jorge", "password": "jorge123" }' -H "Content-Type: application/json"
+$ curl http://localhost:3000/user/account -H "Authorization: Bearer TOKEN" # Where TOKEN is the JWT that you copy from auth/login request.
+```
+
+## Sign in with OAuth Google
+
+```bash
+$ curl http://localhost:3000/user/account -H "Authorization: Bearer TOKEN" # Where TOKEN is the JWT that you copy from https://developers.google.com/oauthplayground.
+```
+
 ## Test
 
 ```bash
