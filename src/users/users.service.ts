@@ -7,11 +7,6 @@ export class UsersService {
   private readonly users = [
     {
       userId: 1,
-      username: 'francis',
-      password: 'francis123'
-    },
-    {
-      userId: 2,
       username: 'jorge',
       password: 'jorge123'
     }
